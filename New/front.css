@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.background-container {
+  content: "";
+  background-image: url('bread-board.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  filter: blur(3px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: auto;
+}
+.header {
+  font-family: "Bahnschrift", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+.head {
+  margin: auto;
+  border: 2px solid darkcyan;
+  border-radius: 20px;
+  padding: 10px;
+  width: 50%;
+}
+hr {
+  margin: 20px;
+}
+.container {
+  max-height: 85%;
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-repeat: repeat-y;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  border-radius: 20px;
+}
+p {
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 30px;
+}
+h2 {
+  text-align: center;
+  border: 2px solid green;
+  border-radius: 20px;
+}
+#title {
+  padding: 20px;
+}
+img {
+    width: 100%;
+  max-width: 400px;
+  height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 53px;
+  background-color: transparent;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+  max-width: 100%;
+  max-heigth: 100%;
+}
+.topnav {
+  overflow: hidden;
+  margin: auto;
+}
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: gray;
+}
+footer {
+    font: bold 20px sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: blue;
+}
