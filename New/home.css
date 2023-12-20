@@ -4,7 +4,7 @@
 
 .background-container {
   content: "";
-  background-image: url('background.jpg');
+  background-image: url('background.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -18,18 +18,19 @@
   overflow: auto;
 }
 .header {
-  font-family: "Bahnschrift", sans-serif;
+  font-family: 'Prata';
   font-weight: bold;
   text-align: center;
   border-radius: 10px;
   padding: 10px;
+  margin: auto;
 }
 .head {
   margin: auto;
   border: 2px solid darkcyan;
   border-radius: 20px;
   padding: 10px;
-  width: 50%;
+  width: auto;
 }
 hr {
   margin: 20px;
@@ -40,7 +41,7 @@ hr {
   width: 95%;
   margin: auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #f3e4db;
   background-repeat: repeat-y;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -50,14 +51,23 @@ hr {
   overflow: auto;
   border-radius: 20px;
 }
+img.logo {
+	max-width: 35%;
+	max-height: 100%;
+	width: 35%;
+}
 p {
-  font-family: "Bahnschrift", sans-serif;
-  font-size: 30px;
+  font-size: 60px;
+}
+p.title-text {
+	font-size: 22px;
+}
+p.head1 {
+	font-size: 25px;
+	font-family: 'Montserrat';
 }
 h2 {
   text-align: center;
-  border: 2px solid green;
-  border-radius: 20px;
 }
 #title {
   border-radius: 20px;
@@ -66,16 +76,30 @@ h2 {
 }
 .topnav {
   overflow: hidden;
-  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #06413D;
+  border-radius: 10px;
 }
 .topnav a {
-  float: right;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  color: gray;
+  color:  #EFD9CC;
+}
+nav {
+	display: flex;
+}
+
+.text2 {
+  width: 100%;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Abril Fatface';
+  background-color: #06413D;
 }
 footer {
     font: bold 20px sans-serif;
@@ -87,50 +111,87 @@ footer {
     color: blue;
 }
 body {
-  font-family: Verdana, sans-serif;
+  font-family: 'Prata';
+}
+hr {
+
+}
+legend {
+	margin: auto;
+  border: 5px solid #06413D;
+  background-color: #06413D;
+  border-radius: 20px;
+  width: auto;
+  color: #EFD9CC;
+  font-size: 60px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Abril Fatface';
+  background-color: #06413D;
 }
 .mySlides {
   display: none;
   width: 100%;
   margin: auto;
 }
-img {
+.container2 {
+
+}
+img.a {
   vertical-align: middle;
-  border-radius: 20px;
 }
 .slideshow-container {
-  max-width: 75%;
-  max-height: 1%;
+  max-width: 100%;
+  max-height: 100%;
   position: relative;
-  margin: auto;
-}
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
   width: 100%;
-  text-align: center;
-}
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+  margin: auto;
+  display: grid; 
+  grid-template-columns: 1fr 0fr;
+  column-gap: 5px;
 }
 .dot {
   height: 15px;
   width: 15px;
   margin: 0 2px;
+  margin-top: 20px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+hr {
+	visibility: hidden;
+}
 .active {
   background-color: #717171;
+}
+.browse-categories {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+ 	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	margin: auto;
+}
+.browse-categories img {
+	max-width: 100%;
+	max-height: 100%;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	padding: 10px;
+	border-radius: 50%;
+}
+.header {
+	color: #EFD9CC;
+	font-family: 'Montserrat';
+	font-size: 22px;
+	padding: 20px;
+	max-width: 100%;
+	max-height: 100%;
+	background-color: #06413D;
+	border-radius: 20px;
 }
 .fade {
   animation-name: fade;
