@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+.background-container {
+	content: "";
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #06413D;
+	position: fixed;
+	filter: blur(3px);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: auto;
+}
+.container {
+	max-height: 90%;
+	max-width: 100%;
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-repeat: repeat-y;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+   	position: absolute;
+    top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+	overflow: auto;
+}
+.recipe-content {
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    width: 100%;
+	max-width: 100%;
+ 	height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.prep-time {
+	padding: 20px;
+	font-size: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	max-width: 100%;
+	width: 100%;
+	margin-top: 20px;
+}
+.prep-time h2 {
+	text-align: left;
+}
+.prep-time p {
+	text-align: center;
+}
+.title {
+	text-align: center;
+}
+span {
+	font-size: 25px;
+}
+p.credit {
+	text-align: left;
+	font-size: 20px;
+	color: gray;
+}
+hr {
+	visibility: hidden;
+	padding: 15px;
+}
+.recipe-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 1200px;
+}
+.custom-checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #06413D;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.custom-checkbox.checked {
+    background-color: #06413D;
+}
+.custom-checkbox span {
+    display: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.custom-checkbox.checked span {
+    display: flex;
+}
+.Ingred-Container {
+	max-width: 100%;
+	width: auto;
+}
+.ingred-title {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.ingred-title span {
+	cursor: pointer;
+}
+.ingred-title h1 {
+	background-color: #4CAF50;
+	font-size: 35px;
+}
+.ingred-con {
+	width: 50%;
+	max-width: 100%;
+}
+.method-title h1 {
+	background-color: #4CAF50;
+	font-size: 35px;
+}	

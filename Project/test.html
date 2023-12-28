@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        h2 {
-            color: #333;
-        }
+    .faq-container {
+      max-width: 600px;
+      margin: 50px auto;
+    }
 
-        .menu {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
+    .faq-item {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+    }
 
-        .menu-section {
-            flex: 1;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 15px;
-            background-color: #f9f9f9;
-        }
+    .faq-question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-        .menu-item {
-            margin-bottom: 10px;
-        }
-    </style>
-    <title>Meal Menu</title>
+    .faq-answer {
+      margin: 0;
+    }
+  </style>
+  <title>FAQ Page</title>
 </head>
 <body>
 
-    <h2>Menu</h2>
-
-    <div class="menu">
-
-        <div class="menu-section">
-            <h3>Breakfast</h3>
-            <div class="menu-item">Pancakes</div>
-            <div class="menu-item">Omelette</div>
-            <div class="menu-item">French Toast</div>
-        </div>
-
-        <div class="menu-section">
-            <h3>Lunch</h3>
-            <div class="menu-item">Chicken Salad</div>
-            <div class="menu-item">Vegetarian Wrap</div>
-            <div class="menu-item">Grilled Cheese Sandwich</div>
-        </div>
-
-        <div class="menu-section">
-            <h3>Dinner</h3>
-            <div class="menu-item">Steak with Mashed Potatoes</div>
-            <div class="menu-item">Salmon with Asparagus</div>
-            <div class="menu-item">Vegetable Stir Fry</div>
-        </div>
-
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">Q: What is Lorem Ipsum?</div>
+      <div class="faq-answer">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
     </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q: How can I contact customer support?</div>
+      <div class="faq-answer">
+        <p>You can contact our customer support by emailing support@example.com or calling 1-800-123-4567.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Q: Is there a return policy?</div>
+      <div class="faq-answer">
+        <p>Yes, we have a 30-day return policy. Please review our <a href="#">return policy</a> for more details.</p>
+      </div>
+    </div>
+
+    <!-- Add more FAQ items as needed -->
+
+  </div>
 
 </body>
 </html>

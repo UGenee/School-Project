@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cmp.css">
+	<link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+	<title>Creamy Meatballs & Pasta</title>
+</head>
+<body>
+	<div class="background-container">
+		<!-- image -->
+	</div>
+		<div class="container">
+			<img src="cmp.png">
+        </div>
+		<div class="recipe-content">
+				<div class="prep-time">
+					<div class="title"><p><b>Prep:</b> 10 mins | <b>Cook:</b> 15 mins | <b>Servings:</b> 4</p></div>
+					<h2>Difficulty: Intermediate</h2>
+					<h2>Cuisine: American, Italian</h2>
+					<span>Our creamy meatball pasta recipe is a simple combination of basic spices, homemade meatballs, cream, and wide noodles.
+					This outcome if very similar to Alfredo without the risk of calling it that.</span>
+					<hr>
+					<p class="credit">
+						Credit: Cook n' Share
+					</p>
+				</div>
+		</div>
+		<div class="Ingred-Container">
+				<div class="ingred-title">
+			<h1>Ingredients:</h1>
+				</div>
+				<div class="ingred-con">
+                <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>1 pound lean ground beef</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>2 tablespoons ketchup</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>2 teaspoons Worcestershire sauce</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>1⁄2 teaspoon garlic powder</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>1⁄2 teaspoon salt</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>1⁄2 teaspoon ground black pepper</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>2 tablespoons chopped fresh parsley</span>
+        </div>
+    </div>
+  </div>
+  
+  <div class="method-title">
+  		<h1>Method:</h1>
+  		                <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>1 pound lean ground beef</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>2 tablespoons ketchup</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>2 teaspoons Worcestershire sauce</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>1⁄2 teaspoon garlic powder</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>1⁄2 teaspoon salt</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>1⁄2 teaspoon ground black pepper</span>
+        </div>
+
+        <div class="recipe-item" onclick="toggleCheckbox(this)">
+            <label class="custom-checkbox">
+                <input type="checkbox" style="display: none;">
+                <span>✔</span>
+            </label>
+            <span>2 tablespoons chopped fresh parsley</span>
+        </div>
+    </div>
+  </div>
+
+  </div>
+    <script>
+        function toggleCheckbox(item) {
+            const checkbox = item.querySelector('input[type="checkbox"]');
+            checkbox.checked = !checkbox.checked;
+
+            const checkboxLabel = item.querySelector('.custom-checkbox');
+            checkboxLabel.classList.toggle('checked', checkbox.checked);
+        }
+    </script>
+</body>
+</html>
